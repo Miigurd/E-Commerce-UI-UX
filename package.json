@@ -2,7 +2,7 @@
   "name": "docker-react-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://miigurd.github.io/Task-Flow/",
+  "homepage": "https://miigurd.github.io/E-Commerce-UI-UX/",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "react": "^18.2.0",
