@@ -1,29 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-function Home() {
+// Import Components
+import Navbar from './Components/Navbar';
+import HomePage from './Components/HomePage';
+
+function About() {
   return (
-    <div>
-      <h1>🐳 Docker React App</h1>
-      <p>Welcome to your Dockerized React application!</p>
-      <p>This app is running in a Docker container with hot reload enabled.</p>
+    <div className="page-content">
+      <h1>About</h1>
+      <p>This is the About page for the NextUp E-Commerce.</p>
     </div>
   );
 }
 
-function About() {
+function Contact() {
   return (
-    <div>
-      <h1>About</h1>
-      <p>This is a sample React app containerized with Docker.</p>
-      <p>Features:</p>
-      <ul>
-        <li>React 18</li>
-        <li>React Router</li>
-        <li>Hot reload in development</li>
-        <li>Production-ready builds</li>
-      </ul>
+    <div className="page-content">
+      <h1>Contact Us</h1>
+      <p>Reach out to us anytime & we’re happy to help!</p>
     </div>
   );
 }
@@ -32,15 +28,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav className="navbar">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link">About</Link>
-        </nav>
-        
+       
+        <Navbar />
+
+       
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
