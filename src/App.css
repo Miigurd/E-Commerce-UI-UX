@@ -201,7 +201,7 @@
   font-size: 0.95rem;
 }
 
-/*Lotion Sectionnnn */
+/*Lotion Section */
 .lotion-section {
   background-color: rgba(247, 248, 250, 1);
   padding: 100px 80px;
@@ -222,6 +222,7 @@
 .lotion-text {
   flex: 1;
   text-align: left;
+  font-family: Poppins, sans-serif;
 }
 
 .lotion-text h1 {
@@ -298,8 +299,197 @@
   }
 }
 
+/* Testimonials Section */
+.testimonials-section {
+  background-color: rgba(27, 124, 0, 0.52);
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.testimonials-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color:rgba(255, 255, 255, 1);;
+  color: #333;
+  border-radius: 12px;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stars {
+  font-size: 1.3rem;
+  color: rgba(27, 124, 0, 1);
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  color: rgba(29, 41, 63, 1);
+}
+
+.testimonial-name {
+  font-size: 0.9rem;
+  color: rgba(124, 128, 135, 1);
+}
+
+/* Popular Products Section */
+.popular-products-section {
+  background-color: #ffffff;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.popular-products-section .products-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  color: #333;
+}
+
+.popular-products-section .products-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  color: rgba(94, 110, 137, 1);
+  font-family: Poppins, sans-serif;
+}
+
+.popular-products-section .product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: start;
+}
+
+@media (max-width: 1000px) {
+  .popular-products-section .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .popular-products-section .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: rgba(39, 39, 39, 1);
+  color: #fff;
+  padding: 40px 80px;
+  font-family: Poppins, sans-serif;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #fff;
+  margin-bottom: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
 
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.footer-left h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  text-align: left;
+  color: rgba(225, 225, 225, 1);
+}
+
+
+.footer-right {
+  display: flex;
+  gap: 60px;
+  flex: 2;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.footer-green {
+  color: rgba(150, 255, 200, 1);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-column p {
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: rgba(225, 225, 225, 1);
+}
+
+.footer-column p:hover,
+.footer-green:hover {
+  color: rgba(86, 178, 128, 1);
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .footer-right {
+    justify-content: flex-start;
+  }
+}
 
 
 /* General */
@@ -322,5 +512,5 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
-  color: #666;
+  color: #667;
 }
