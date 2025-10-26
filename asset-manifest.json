@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/E-Commerce-UI-UX/static/css/main.c59baa0f.css",
-    "main.js": "/E-Commerce-UI-UX/static/js/main.f4de374c.js",
-    "index.html": "/E-Commerce-UI-UX/index.html",
-    "main.c59baa0f.css.map": "/E-Commerce-UI-UX/static/css/main.c59baa0f.css.map",
-    "main.f4de374c.js.map": "/E-Commerce-UI-UX/static/js/main.f4de374c.js.map"
+    "main.css": "/NextUp/static/css/main.c59baa0f.css",
+    "main.js": "/NextUp/static/js/main.310a1bc4.js",
+    "index.html": "/NextUp/index.html",
+    "main.c59baa0f.css.map": "/NextUp/static/css/main.c59baa0f.css.map",
+    "main.310a1bc4.js.map": "/NextUp/static/js/main.310a1bc4.js.map"
   },
   "entrypoints": [
     "static/css/main.c59baa0f.css",
-    "static/js/main.f4de374c.js"
+    "static/js/main.310a1bc4.js"
   ]
 }
