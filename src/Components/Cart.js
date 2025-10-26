@@ -36,7 +36,7 @@ function Cart() {
       alert("Your cart is empty!");
       return;
     }
-    navigate("/checkout");
+    navigate("/NextUp/checkout");
   };
 
   const calculateSubtotal = () =>
@@ -47,7 +47,7 @@ function Cart() {
         <Container className="my-5">
         <h3 className="text-center fw-semibold mb-3">Your cart items</h3>
         <div className="text-center mb-4">
-            <Link to="/" className="text-success fw-semibold">Back to shopping</Link>
+            <Link to="/NextUp" className="text-success fw-semibold">Back to shopping</Link>
         </div>
 
         {cartItems.length === 0 ? (

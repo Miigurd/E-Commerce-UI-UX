@@ -23,7 +23,7 @@ function Checkout() {
     // ✅ Clear cart after checkout
     localStorage.removeItem("cart");
     alert("Thank you for your purchase!");
-    navigate("/");
+    navigate("/NextUp");
   };
 
   return (
@@ -91,7 +91,7 @@ function Checkout() {
             </div>
 
             <div className="d-flex justify-content-between">
-              <Link to="/cart" className="text-success fw-semibold">
+              <Link to="/NextUp/cart" className="text-success fw-semibold">
                 Back to cart
               </Link>
               <Button

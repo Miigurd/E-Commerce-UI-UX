@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
 // Import Components
@@ -36,13 +36,14 @@ function App() {
         <Navbar />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/product-list" element={<ProductList />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/" element={<Navigate to="/NextUp" />} />
+            <Route path="/NextUp" element={<HomePage />} />
+            <Route path="/NextUp/about" element={<About />} />
+            <Route path="/NextUp/contact" element={<Contact />} />
+            <Route path="/NextUp/product-list" element={<ProductList />} />
+            <Route path="/NextUp/product/:id" element={<ProductDetail />} />
+            <Route path="/NextUp/checkout" element={<Checkout />} />
+            <Route path="/NextUp/cart" element={<Cart />} />
           </Routes>
         </main>
         <Footer />

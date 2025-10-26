@@ -5,7 +5,7 @@ import products from "../data/products.json";
 
 const ProductCard = ({ id, image, title, price, discount, note }) => (
   <Link
-    to={`/product/${id}`}
+    to={`/NextUp/product/${id}`}
     className="product-card text-decoration-none d-block text-center p-2"
     style={{ cursor: "pointer" }}
   >

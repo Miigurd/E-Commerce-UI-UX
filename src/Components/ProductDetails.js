@@ -30,7 +30,7 @@ function ProductDetail() {
     return (
       <Container className="text-center my-5">
         <h3>Product not found</h3>
-        <Link to="/" className="btn btn-success mt-3">Back to Products</Link>
+        <Link to="/NextUp" className="btn btn-success mt-3">Back to Products</Link>
       </Container>
     );
   }
